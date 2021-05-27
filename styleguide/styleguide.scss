@@ -1,43 +1,377 @@
-body {
-    background-color: rgb(196, 196, 226);
+@use '../styles/general/colors' as *; /* this enables the usage of all variables and mixins from the general folder */
+@use '../styles/general/fonts' as *;
+
+html {
+  scroll-behavior: smooth;
 }
 
+body {
+  width: 70%;
+  margin: auto;
+  padding: 0;
+  background-color: #ebebeb;
+  font-family: $primary_font;
+}
 
+header {
+  margin-bottom: 6.5rem;
+}
 
+// Menu that links to different section in the styleguide
 
 .menu {
-    text-align: right;
-    display: flex;
-    justify-content: flex-start;
+  width: 70%;
+  display: flex;
+  position: fixed;
+  top: 0;
 }
 
 .menu__link {
-    display: block;
-    padding: 0.5rem 2rem;
-    color: rgb(14 14 14);
-    text-decoration: none;
+  font-size: 1.1rem;
+  display: block;
+  padding: 0.5rem 2rem;
+  color: #3a3b3c;
+  text-decoration: none;
 }
-.menu__link:hover, .menu__link.--active {
-    color: rgb(173 31 31);
-    font-weight: bold;
-    top: 0;
-    left: 0;
+.menu__link:hover,
+.menu__link.--active {
+  color: $primary_font-color;
+  font-weight: bold;
+  top: 0;
+  left: 0;
 }
-
 
 .menu__list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    width: 100vw;
-    padding: 1rem 2rem;
-    background-color: #ebebeb;
-    margin: 0 0 1rem 0;
-    min-width: 300px;
-    justify-items: center;
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+  padding: 1rem 2rem;
+  background-color: #3a3b3c;
+  margin: 0 0 1rem 0;
+  min-width: 300px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .menu__item {
-    display: block;
+  display: block;
 }
 
+.menu__item a {
+  color: #ffffff;
+  font-weight: 600;
+}
 
+//Styleguide: Color palette section styling
+
+.color {
+  padding: 44px 0px 20px 32px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  &__heading {
+    font-size: 2rem;
+    color: $primary_font-color;
+    margin: 0;
+    line-height: 1.2;
+  }
+  &__description {
+    font-size: 1rem;
+    margin: 0 0 32px 0;
+    width: 80%;
+  }
+  &__title {
+    font-size: 1rem;
+    color: #3a3b3c;
+    margin-bottom: 0.2rem;
+  }
+  &__wrapper {
+    display: flex;
+  }
+  &__hex {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    color: #ffffff;
+    border: solid 1px;
+    border-radius: 10px;
+    margin: 10px 0px;
+  }
+  &__hex--light-blue {
+    background-color: $primary_blue-light;
+  }
+  &__hex--dark-blue {
+    background-color: $primary_blue-dark;
+  }
+  &__hex--font {
+    background-color: #116f99;
+  }
+  &__hex--blue-gradient {
+    background: $primary_gradient;
+  }
+  &__hex--red {
+    background: $secondary_red;
+  }
+  &__hex--yellow {
+    background: $secondary_yellow;
+  }
+  &__hex--dark-grey {
+    background: $secondary__grey;
+  }
+  &__information {
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+    padding-bottom: 1.5rem;
+    width: 200px;
+    height: inherit;
+  }
+  &__scss-name {
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+    border: solid 1px darkgray;
+    border-radius: 10px;
+    color: #000000;
+  }
+}
+
+//Styleguide: Typography section styling
+
+.typography {
+  margin-top: 30px;
+  padding: 44px 32px 44px 32px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  &__heading {
+    font-size: 2rem;
+    color: $primary_font-color;
+    margin: 0;
+    line-height: 1.2;
+  }
+  &__description {
+    font-size: 1rem;
+    margin: 0 0 32px 0;
+    width: 80%;
+  }
+  &__fonts {
+    margin: 0;
+    color: #3a3b3c;
+    font-size: 1rem;
+  }
+  &__title {
+    font-size: 1rem;
+    margin: 0;
+    color: #3a3b3c;
+  }
+  &__display {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px #ebebeb;
+  }
+  &__text--common-styles {
+    margin: 5px 0px;
+    color: $primary_font-color;
+  }
+  &__h1 {
+    font-size: 2rem;
+  }
+  &__h2 {
+    font-size: 1.25rem;
+  }
+  &__h3 {
+    font-size: 1.125rem;
+  }
+  &__h4 {
+    font-size: 1rem;
+  }
+  &__h5 {
+    font-size: 0.75rem;
+  }
+  &__size-info {
+    width: 26px;
+    height: 26px;
+    font-size: 0.8rem;
+    color: #3a3b3c;
+    border: solid 1px #3a3b3c;
+    border-radius: 5px;
+    text-align: center;
+  }
+}
+
+//Styleguide: Typography with different background
+
+.typography {
+  &__gradient-background {
+    background: $primary_gradient;
+  }
+  &__heading--color {
+    color: #ffffff;
+  }
+  &__description--color {
+    color: #ffffff;
+  }
+  &__fonts--color {
+    color: lightgrey;
+  }
+  &__title--color {
+    color: lightgrey;
+  }
+  &__text--color {
+    color: #ffffff;
+  }
+  &__size-info--color {
+    color: #ffffff;
+    border: solid 1px #ffffff;
+  }
+}
+
+//Styleguide: icons section
+
+.icons {
+  margin-top: 30px;
+  padding: 44px 32px 44px 32px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  &__heading {
+    font-size: 2rem;
+    color: $primary_font-color;
+    margin: 0;
+    line-height: 1.2;
+  }
+  &__description {
+    font-size: 1rem;
+    margin: 0 0 32px 0;
+    width: 80%;
+  }
+  &__information {
+    width: 200px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+    align-items: center;
+  }
+  &__wrapper {
+    display: flex;
+  }
+  &__icon-svg {
+    width: 60px;
+  }
+  &__file-path {
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+    border: solid 1px darkgray;
+    border-radius: 10px;
+    color: #000000;
+    margin-top: 10px;
+  }
+  &__report-svg {
+    width: 60px;
+  }
+}
+
+// Styleguide: Modules section
+
+.buttons {
+  margin-top: 30px;
+  padding: 44px 32px 44px 32px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin-bottom: 100px;
+  &__heading {
+    font-size: 2rem;
+    color: $primary_font-color;
+    margin: 0;
+    line-height: 1.2;
+  }
+  &__description {
+    font-size: 1rem;
+    margin: 0 0 32px 0;
+    width: 80%;
+  }
+  &__wrapper {
+    display: flex;
+  }
+  &__location--flex {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 50px;
+  }
+  &__location {
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    border-bottom: solid 1px grey;
+    margin-bottom: 10px;
+  }
+  &__location--adress {
+    font-size: 20px;
+    color: $primary_font-color;
+    font-weight: 100;
+    padding-right: 2.5rem;
+    margin-bottom: 0.3rem;
+  }
+  &__location--distance-and-payment {
+    display: flex;
+  }
+  &__location--coin-icon {
+    padding-right: 10px;
+    width: 1.5rem;
+  }
+  &__location--distance {
+    font-size: 20px;
+    font-weight: 100;
+    color: $primary_font-color;
+    margin-bottom: 0.3rem;
+  }
+  &__location--link {
+    text-decoration: none;
+    color: $primary_font-color;
+  }
+  &__location-use {
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+    border: solid 1px darkgray;
+    border-radius: 10px;
+    color: #000000;
+    margin-top: 10px;
+  }
+  &__send {
+    width: 300px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__send--style {
+    font-family: $primary_font;
+    font-size: 1rem;
+    color: #ffffff;
+    padding: 5px 20px;
+    background: $primary_gradient;
+    border: solid 0px;
+    border-radius: 15px;
+    box-shadow: 0px 3px 6px rgba($color: #000000, $alpha: 1);
+    margin-top: 20px;
+  }
+  &__send-use {
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+    border: solid 1px darkgray;
+    border-radius: 10px;
+    color: #000000;
+    margin-top: 10px;
+  }
+}
