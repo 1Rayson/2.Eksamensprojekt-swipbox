@@ -1,2 +1,15 @@
 @use '../general' as *; /* this enables the usage of all variables and mixins from the general folder */
 
+.button {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 25%;
+    color: #2F9EC7;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
