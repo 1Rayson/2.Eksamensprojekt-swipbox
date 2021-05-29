@@ -7,217 +7,134 @@
     <title>Design system example</title>
     <link rel="stylesheet" href="https://use.typekit.net/get3xwa.css" />
     <link rel="stylesheet" href="styleguide.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
-      <!--
-        Top menu that links to the styleguides different sections
-      -->
-      <nav class="menu">
-        <ul class="menu__list">
-          <li class="menu__item">
-            <a href="#colors" class="menu__link">Colors</a>
-          </li>
-          <li class="menu__item">
-            <a href="#typography" class="menu__link">Typography</a>
-          </li>
-          <li class="menu__item">
-            <a href="#icons" class="menu__link">Icons</a>
-          </li>
-          <li class="menu__item">
-            <a href="#buttons" class="menu__link">Buttons</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <!--
-      Color palette section
-    -->
-    <section class="color" id="colors">
-      <h1 class="color__heading">Color palette</h1>
-      <p class="color__description">
-        Here you see our primary, gradients and secondary color palettes as described in our
-        styleguide and colors.sass
-      </p>
-      <h2 class="color__title">Primary Colors</h2>
-      <div class="color__wrapper">
-        <article class="color__information">
-          <p class="color__hex color__hex--light-blue">#0F89BE</p>
-          <aside class="color__scss-name">$primaryBlue-light</aside>
-        </article>
-        <article class="color__information">
-          <p class="color__hex color__hex--dark-blue">#0f445b</p>
-          <aside class="color__scss-name">$primaryBlue-dark</aside>
-        </article>
-        <article class="color__information">
-          <p class="color__hex color__hex--font">#116f99</p>
-          <aside class="color__scss-name">$primary_font-color</aside>
-        </article>
-      </div>
-      <h2 class="color__title">Gradients</h2>
-      <div class="color__wrapper">
-        <article class="color__information">
-          <p class="color__hex color__hex--blue-gradient">#0f445b + #0f89be</p>
-          <aside class="color__scss-name">
-            $primaryBlue-dark <br />
-            $primaryBlue-light
-          </aside>
-        </article>
-      </div>
-      <h2 class="color__title">Secondary Colors</h2>
-      <div class="color__wrapper">
-        <article class="color__information">
-          <p class="color__hex color__hex--red">#ff0000</p>
-          <aside class="color__scss-name">$secondary_red</aside>
-        </article>
-        <article class="color__information">
-          <p class="color__hex color__hex--yellow">#fff831</p>
-          <aside class="color__scss-name">$secondary_yellow</aside>
-        </article>
-        <article class="color__information">
-          <p class="color__hex color__hex--dark-grey">#707070</p>
-          <aside class="color__scss-name">$secondary_grey</aside>
-        </article>
-      </div>
-    </section>
-    <!--
-      Typography section displayed on a white background
-    -->
-    <section class="typography" id="typography">
-      <h1 class="typography__heading">Typography</h1>
-      <p class="typography__description">
-        Here you see our fonts used in our app as described in our styleguide and fonts.scss
-      </p>
-      <p class="typography__fonts">
-        Fonts used on our app: katin, sans serif. Accessable by using $primary_font.
-      </p>
-      <h2 class="typography__title">Headings displayed on a white background:</h2>
-      <article class="typography__display">
-        <h1 class="typography__h1 typography__text--common-styles">The quick, brown fox</h1>
-        <p class="typography__size-info">h1</p>
-      </article>
-      <article class="typography__display">
-        <h2 class="typography__h2 typography__text--common-styles">The quick, brown fox</h2>
-        <p class="typography__size-info">h2</p>
-      </article>
-      <article class="typography__display">
-        <h3 class="typography__h3 typography__text--common-styles">The quick, brown fox</h3>
-        <p class="typography__size-info">h3</p>
-      </article>
-      <article class="typography__display">
-        <h4 class="typography__h4 typography__text--common-styles">The quick, brown fox</h4>
-        <p class="typography__size-info">h4</p>
-      </article>
-      <article class="typography__display">
-        <h5 class="typography__h5 typography__text--common-styles">The quick, brown fox</h5>
-        <p class="typography__size-info">h5</p>
-      </article>
-    </section>
-    <!--
-      Typography section displayed on a gradient background
-    -->
-    <section class="typography typography__gradient-background">
-      <h1 class="typography__heading typography__heading--color">Typography</h1>
-      <p class="typography__description typography__description--color">
-        Here you see our fonts used in our app as described in our styleguide and fonts.scss
-      </p>
-      <p class="typography__fonts typography__fonts--color">
-        Fonts used on our app: katin, sans serif. Accessable by using $primary_font.
-      </p>
-      <h2 class="typography__title typography__title--color">
-        Headings displayed on a gradient background:
-      </h2>
-      <article class="typography__display">
-        <h1 class="typography__h1 typography__text--common-styles typography__text--color">
-          The quick, brown fox
-        </h1>
-        <p class="typography__size-info typography__size-info--color">h1</p>
-      </article>
-      <article class="typography__display">
-        <h2 class="typography__h2 typography__text--common-styles typography__text--color">
-          The quick, brown fox
-        </h2>
-        <p class="typography__size-info typography__size-info--color">h2</p>
-      </article>
-      <article class="typography__display">
-        <h3 class="typography__h3 typography__text--common-styles typography__text--color">
-          The quick, brown fox
-        </h3>
-        <p class="typography__size-info typography__size-info--color">h3</p>
-      </article>
-      <article class="typography__display">
-        <h4 class="typography__h4 typography__text--common-styles typography__text--color">
-          The quick, brown fox
-        </h4>
-        <p class="typography__size-info typography__size-info--color">h4</p>
-      </article>
-      <article class="typography__display">
-        <h5 class="typography__h5 typography__text--common-styles typography__text--color">
-          The quick, brown fox
-        </h5>
-        <p class="typography__size-info typography__size-info--color">h5</p>
-      </article>
-    </section>
-    <!--
-      Icons section
-    -->
-    <section class="icons" id="icons">
-      <h1 class="icons__heading">Icons</h1>
-      <p class="icons__description">
-        Here you see a collection of the icons used in our app, as displayed in our styleguide and
-        /assets/icons. The icons are svg file format.
-      </p>
-      <div class="icons__wrapper">
-        <article class="icons__information">
-          <img
-            class="icons__icon-svg"
-            src="/assets/icons/coin.svg"
-            alt="A coin icons with a dollar sign in the middle"
-          />
-          <aside class="icons__file-path">/assets/icons/coin.svg</aside>
-        </article>
-        <article class="icons__information">
-          <img
-            class="icons__report-svg"
-            src="/assets/icons/report.svg"
-            alt="A red circle with an exclamation mark "
-          />
-          <aside class="icons__file-path">/assets/icons/report.svg</aside>
-        </article>
-      </div>
-    </section>
-    <!--
-      Styleguide: Modules section
-    -->
-    <section class="buttons" id="buttons">
-      <h1 class="buttons__heading">Buttons</h1>
-      <p class="buttons__description">
-        Here you see a collection of the modules used to build up our app, as displayed in our
-        styleguide and /styles/modules
-      </p>
-        <a href="#" class="buttons__location--link">
-        <div class="buttons__wrapper">
-        <section class="buttons__location--flex">
-        <article class="buttons__location">
-          <h2 class="buttons__location--adress">Kongevej, 69</h2>
-          <aside class="buttons__location--distance-and-payment">
-            <img
-              class="buttons__location--coin-icon"
-              src="/assets/icons/coin.svg"
-              alt="A coin icon showing that you have to pay to use the public bathroom"
-            />
-            <h2 class="buttons__location--distance">8,09 km</h2>
-        </article>
-        <aside class="buttons__location-use">Button directs you to next page</aside>
-      </section>
-      </a>
-      <article class="buttons__send">
-        <a href="#">
-          <button class="buttons__send--style">Send</button>
-        </a>
-        <aside class="buttons__send-use">Sends the formular you have written</aside>
-      </article>
-      </div>
-    </section>
-  </body>
+      <body>
+        <header>
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="#colors" class="menu__link">Colors</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#fonts" class="menu__link">Fonts</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#buttons" class="menu__link">Buttons</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#module" class="menu__link">Modules</a>
+                    </li>
+                    
+                </ul>
+            </nav>
+        </header>
+        <section class="module" id="colors">
+            <h2 class="titlestyle">Colors</h2>
+        </section>
+        <section class="color --background">Background Color - #2F9EC7</section>
+        <section class="color --secondary">Secondary Color - #0978A1</section>
+        <section class="color --buttons">Buttons - #FFFFFF</section>
+        <section class="color --popup">Pop-up - #797C81</section>
+        <section class="module" id="fonts">
+            <h2 class="titlestyle">Fonts</h2>
+        </section>
+        <h2 class="fonts --title">This is a title font</h2>
+        <p class="fonts --body">This is a body font</p>
+        <section class="module" id="buttons">
+            <h2 class="titlestyle">Buttons</h2>
+        </section>
+            <button class="button">Standard Button</button>
+            <button class="button -smallbutton">Smaller Button</button>
+            <button class="fadedbutton">Faded button</button>
+            <section class="collapsibleButton">
+                <button type="button" class="collapsibleButton__button">Collapsible Button</button>
+                <article class="collapsibleButton__content">
+                    <p>Water plants</p>
+                </article>
+            </section>
+        <section class="module" id="module">
+            <h2 class="titlestyle">Modules</h2>
+        </section>
+        <figure class="avatar avatar-sm">
+            <p>Avatar:</p>
+            <img src="../assets/avatar.png" alt="avatar">
+          </figure>
+          <p>Input form:</p>
+          <form>
+            <h2 class="undertitle">E-mail</h2>
+            <section class="centerbutton"><input class="input" type="text" placeholder="Enter Your E-mail"></section>
+        </form>
+        <p>Menu:</p>
+        <nav class="menu">
+            <a href=""><i class="fas fa-calendar-alt"></i></a>
+            <a href=""><i class="fas fa-camera"></i></a>
+            <a href=""><i class="fas fa-plus-square"></i></a>
+            <a href=""><i class="fas fa-address-book"></i></a>
+            <a href=""><i class="fas fa-book"></i></a>
+          
+          </nav>
+    
+          <p>Profile Info:</p>
+          <section class="profileInfo">
+            <p class="profileInfo__title">Name:</p>
+            <p class="profileInfo__content">Pana</p>
+            <p class="profileInfo__title">E-mail:</p>
+            <p class="profileInfo__content">Pana@gmail.com</p>
+            <p class="profileInfo__title">Garden ID:</p>
+            <p class="profileInfo__content">0000-1234-5678</p>
+        </section>
+    
+        <p>Info section:</p>
+        <section class="plantinfo">
+            <img src="../assets/plant4.png">
+            <section class="plantinfo__info">
+                <section class="plantinfo__content">
+                    <img src="../assets/Water.png">
+                    <p class="plantinfo__text">1 times a week</p>
+                </section>
+                <section class="plantinfo__content">
+                    <img src="../assets/Sun.png">
+                    <p class="plantinfo__text">In the shade</p>
+                </section>
+                <section class="plantinfo__content">
+                    <img src="../assets/Poo.png">
+                    <p class="plantinfo__text">1 times every 2 weeks</p>
+                </section>
+                <section class="plantinfo__content">
+                    <img src="../assets/Thermometer.png">
+                    <p class="plantinfo__text">7 - 20 C</p>
+                </section>
+            </section>
+        </section>
+    
+        <p>Stats:</p>
+        <section class="stats">
+            <section class="stats__content">
+                <img class="stats__pic" src="../assets/Water.png">
+                <section class="stats__text">
+                    <p class="stats__title">Times Watered:</p>
+                    <p class="stats__stat">12</p>
+                </section>
+            </section>
+            <section class="stats__content">
+                <img class="stats__pic" src="../assets/poo.png">
+                <section class="stats__text">
+                    <p class="stats__title">Times Fertilized:</p>
+                    <p class="stats__stat">5</p>
+                </section>
+            </section>
+        </section>
+        <section class="stats__content stats__content--sun">
+            <img class="stats__pic" src="../assets/Sun.png">
+            <section class="stats__text stats__text--sun">
+                <p class="stats__title">Days Alive:</p>
+                <p class="stats__stat">5</p>
+            </section>
+        </section>
+    
+        <script src="../calendar.js"></script>
 </html>
