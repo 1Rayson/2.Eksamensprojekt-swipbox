@@ -8,30 +8,34 @@ html, body, section{
   }
   
   section{
-    background-color:#0099CC;
+    background-color:#0978A1;
     color:#fff;
   }
   
   #two{
-    background-color:#15b22f;
+    background-color:#2F9EC7;
   }
   
   #one.curtain, #two.curtain{
     position:absolute;
     top:0;
     z-index:1;
-    transform-origin:top center;
-    animation: slide 1.5s forwards;
+    animation: slide 1.5s ease-in;
   }
   
   @keyframes slide {
       0% {
-          transform: perspective(800px) rotateX(-90deg);
+          top: 0%;
           opacity: 1;
       } 
       
-      100% {
-          transform: perspective(800px) rotateX(0deg);
+      90% {
+          top: 100%;
           opacity: 1;
       }
+
+      100% {
+        top: 100%;
+        opacity: 1;
+    }
   }
