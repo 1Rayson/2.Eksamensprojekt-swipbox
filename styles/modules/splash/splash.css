@@ -1,41 +1,59 @@
-html, body, section{
-    height:100%;
-    width:100%;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-    position: relative;
-  }
-  
-  section{
-    background-color:#0978A1;
-    color:#fff;
-  }
-  
-  #two{
-    background-color:#2F9EC7;
-  }
-  
-  #one.curtain, #two.curtain{
-    position:absolute;
-    top:0;
-    z-index:1;
-    animation: slide 1.5s ease-in;
-  }
-  
-  @keyframes slide {
-      0% {
-          top: 0%;
-          opacity: 1;
-      } 
-      
-      90% {
-          top: 100%;
-          opacity: 1;
-      }
+html, body, section {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
 
-      100% {
-        top: 100%;
-        opacity: 1;
-    }
+.splash__logo {
+  height: 20%;
+  width: 20%;
+}
+
+section {
+  background-color: #0978A1;
+  color: #fff;
+}
+
+#two {
+  background-color: #2F9EC7;
+}
+
+#one.curtain, #two.curtain {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  -webkit-animation: slide 1.2s ease-in;
+          animation: slide 1.2s ease-in;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    top: 0%;
+    opacity: 1;
   }
+  90% {
+    top: 100%;
+    opacity: 1;
+  }
+  100% {
+    top: 100%;
+    opacity: 1;
+  }
+}
+@keyframes slide {
+  0% {
+    top: 0%;
+    opacity: 1;
+  }
+  90% {
+    top: 100%;
+    opacity: 1;
+  }
+  100% {
+    top: 100%;
+    opacity: 1;
+  }
+}
