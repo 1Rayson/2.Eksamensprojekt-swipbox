@@ -1,0 +1,37 @@
+html, body, section{
+    height:100%;
+    width:100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  
+  section{
+    background-color:#0099CC;
+    color:#fff;
+  }
+  
+  #two{
+    background-color:#15b22f;
+  }
+  
+  #one.curtain, #two.curtain{
+    position:absolute;
+    top:0;
+    z-index:1;
+    transform-origin:top center;
+    animation: slide 1.5s forwards;
+  }
+  
+  @keyframes slide {
+      0% {
+          transform: perspective(800px) rotateX(-90deg);
+          opacity: 1;
+      } 
+      
+      100% {
+          transform: perspective(800px) rotateX(0deg);
+          opacity: 1;
+      }
+  }
