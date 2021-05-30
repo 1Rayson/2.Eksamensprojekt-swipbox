@@ -122,10 +122,6 @@ body {
 }
 
 /* Auto/manual image slider */
-.slider {
-  overflow: hidden;
-}
-
 .slides {
   width: 500%;
   height: 100%;
