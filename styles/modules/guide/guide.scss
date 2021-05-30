@@ -1,5 +1,9 @@
 @use '../../general' as*;
 
+body{
+  background-color: $primary;
+}
+
 /* Auto/manual image slider */
 .slider {
     overflow: hidden;
@@ -18,15 +22,8 @@
   
   .slide {
     width: 20%;
-    transition: 2s;
     position: relative;
     z-index: -1;
-  }
-  
-  .slide img {
-    width: 100%;
-    height: 91vh;
-    object-fit: cover;
   }
   
   /* CSS for manual slide navigation */
@@ -43,11 +40,10 @@
     padding: 7px;
     border-radius: 50%;
     cursor: pointer;
-    transition: 1s;
   }
   
   .manual-btn:not(:last-child) {
-    margin-right: 50px;
+    margin-right: 20px;
   }
   
   .manual-btn:hover {
@@ -68,256 +64,24 @@
   
   #radio4:checked ~ .first {
     margin-left: -60%;
+  } 
+  
+  #radio5:checked ~ .first {
+    margin-left: -80%;
+  }
+
+  #radio6:checked ~ .first {
+    margin-left: -100%;
+  }
+
+  #radio7:checked ~ .first {
+    margin-left: -120%;
   }
   
-  /* CSS or automatic navigation */
-  .navigation-auto {
-    position: absolute;
-    width: 100%;
-    margin-top: 81vh;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .navigation-auto div {
-    border: 2px solid #ffffff;
-    padding: 7px;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: 1s;
-  }
-  
-  .navigation-auto div:not(:last-child) {
-    margin-right: 50px;
-  }
-  
-  #radio1:checked ~ .navigation-auto .auto-btn1 {
-    background: #ffffff;
-  }
-  
-  #radio2:checked ~ .navigation-auto .auto-btn2 {
-    background: #ffffff;
-  }
-  
-  #radio3:checked ~ .navigation-auto .auto-btn3 {
-    background: #ffffff;
-  }
-  
-  #radio4:checked ~ .navigation-auto .auto-btn4 {
-    background: #ffffff;
-  }
-  
+ 
+
   /* Picture text and info styling */
-  
-  /* picture 1 -text styling */
-  .slide-1-background {
-    position: absolute;
-    right: 0;
-    width: 45%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-  }
-  
-  .slide-1--grid {
-    position: relative;
-    display: grid;
-    grid-column: 1fr;
-    grid-template-rows: repeat(auto-fit, minmax(1fr));
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    justify-items: center;
-    font-size: 16px; /* Parent container to the text elements. Change this font size, to change all child elements text sizes*/
-  }
-  
-  .slide__title {
-    font-size: 3em;
-    color: #ffffff;
-    border: solid 5px #ffffff;
-    padding: 50px;
-    width: 400px;
-    background: rgba(0, 0, 0, 0.5);
-    line-height: 60px;
-  }
-  
-  .slide__title--color {
-    color: #45a29e;
-  }
-  
-  .slide__paragraph {
-    width: 376.29px;
-    font-size: 1.1em;
-    color: #ffffff;
-    text-align: center;
-    border-top: solid 1px #45a29e;
-    margin-top: 10px;
-    padding: 5px 0px 5px 0px;
-  }
-  
-  .slide__comment {
-    width: 300px;
-    font-size: 0.8em;
-    color: #ffffff;
-    text-align: center;
-    border-top: solid 1px #45a29e;
-    padding-top: 5px;
-  }
-  
-  /* picture 2 -text styling */
-  .slide-2-background {
-    position: absolute;
-    width: 100%;
-    height: 60%;
-    top: 40%;
-    transform: translate(0, -40%);
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-  
-  .slide-2--grid {
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(auto-fit, minmax(1fr));
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    justify-items: center;
-    grid-gap: 10px;
-    font-size: 16px; /* Parent container to the text elements. Change this font size, to change all child elements text sizes*/
-  }
-  
-  .slide-2__title {
-    font-size: 3.5em;
-    color: #ffffff;
-  }
-  
-  .slide-2__paragraph {
-    font-size: 1em;
-    text-align: center;
-    color: #ffffff;
-    width: 500px;
-    padding: 10px;
-    border: solid 3px #ffffff;
-    border-radius: 10px;
-  }
-  
-  .slide-2__title--bottom {
-    font-size: 3.5em;
-    color: #ffffff;
-  }
-  
-  .slide-2__title--color {
-    color: #45a29e;
-  }
-  
-  /* Picture 3 styling */
-  .slide-3-background {
-    position: absolute;
-    width: 50%;
-    height: 60%;
-    top: 40%;
-    left: 0;
-    transform: translate(0, -40%);
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-  
-  .slide-3--grid {
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(auto-fit, minmax(1fr));
-    top: 50%;
-    left: 50%;
-    width: 80%;
-    transform: translate(-50%, -50%);
-    grid-gap: 10px;
-    font-size: 16px; /* Parent container to the text elements. Change this font size, to change all child elements text sizes*/
-  }
-  
-  .slide-3__title {
-    width: fit-content;
-    grid-row: 1/2;
-    font-size: 4.3em;
-    line-height: 65px;
-    border-bottom: solid 3px #ffffff;
-    color: #ffffff;
-    text-shadow: 0px 3px 6px rgba(0, 0, 0, 1);
-  }
-  
-  .slide-3__title--color {
-    color: #45a29e;
-  }
-  
-  .slide-3__paragraph {
-    grid-row: 2/3;
-    color: #ffffff;
-    text-shadow: 0px 3px 6px rgba(0, 0, 0, 1);
-    font-size: 1em;
-  }
-  
-  .slide-3__comment {
-    grid-row: 3/4;
-    font-size: 0.93em;
-    text-align: center;
-    color: #ffffff;
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 1);
-    background-color: #45a29e;
-    border-radius: 5px;
-  }
-  
-  /* picture 4 styling */
-  .slide-4-background {
-    position: absolute;
-    width: 800px;
-    height: 370px;
-    background-color: rgba(0, 0, 0, 0.5);
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -40%);
-    border-radius: 30px;
-  }
-  
-  .slide-4--grid {
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(auto-fit, minmax(1fr));
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    justify-items: center;
-    grid-gap: 10px;
-    font-size: 16px; /* Parent container to the text elements. Change this font size, to change all child elements text sizes*/
-  }
-  
-  .slide-4__title {
-    font-size: 3.5em;
-    color: #ffffff;
-  }
-  
-  .slide-4__title--border {
-    height: 2px;
-    width: 40%;
-    background-color: #45a29e;
-  }
-  
-  .slide-4__paragraph {
-    font-size: 1.2em;
-    width: 80%;
-    color: #ffffff;
-    text-align: center;
-  }
-  
-  .slide-4__paragraph--border {
-    height: 2px;
-    width: 30%;
-    background-color: #45a29e;
-  }
-  
-  .slide-4__comment {
-    font-size: 1em;
-    color: #ffffff;
-    text-align: center;
-  }
+
+
+
+ 
