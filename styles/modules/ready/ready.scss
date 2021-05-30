@@ -1,2 +1,26 @@
 @use '../../general' as *;
 
+h1, a, p{
+    color: white;
+    font-family:$font_title;
+    text-align: center;
+}
+
+.title{
+    font-size: 2em;
+    margin-top: 1em;
+}
+
+.location{
+    height: 50%;
+    width: 90%;
+    justify-content: center;
+    display: grid;
+        &--img{
+        border-radius: 25px;
+        }
+        &--text{
+            
+        }
+}
+

@@ -3,7 +3,7 @@
 .button {
     background-color: #ffffff;
     border: none;
-    border-radius: 25%;
+    border-radius: 16px;
     color: #2F9EC7;
     text-align: center;
     text-decoration: none;
@@ -11,12 +11,12 @@
     cursor: pointer;
 
     &--one{
-      padding: 20px;
-      font-size: 16px;
-      margin: 4px 2px;
+      padding: 1em 2em;
+      font-size: 24px;
+      
     }
 
-    &__two{
+    &--two{
       
     }
   }
