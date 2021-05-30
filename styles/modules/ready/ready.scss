@@ -8,19 +8,39 @@ h1, a, p{
 
 .title{
     font-size: 2em;
-    margin-top: 1em;
 }
 
 .location{
-    height: 50%;
+    height: 90%;
     width: 90%;
     justify-content: center;
     display: grid;
+    grid-template-areas:
+    'img img'
+    'text text'
+    'button button'
+    'back link';
         &--img{
-        border-radius: 25px;
+            height:40vh;
+            width: 50vw;
+            border-radius: 25px;
+            grid-area:'img';
         }
         &--text{
-            
+            font-size: 1.5em;
+            margin:1em;
+            grid-area:'text';
         }
+        &--button{
+            grid-area:'button';
+        }
+        &--link{
+            grid-area:'link';
+        }
+        &--back{
+            height: auto;
+            grid-area:'back';
+        }
+
 }
 
