@@ -62,12 +62,8 @@ table {
 
 .menu {
   text-align: right;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .menu__link {
@@ -85,9 +81,7 @@ table {
 }
 
 .menu__list {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   width: 100vw;
   padding: 1rem 2rem;
@@ -107,24 +101,23 @@ table {
   border: none;
   border-radius: 25%;
   color: #2F9EC7;
-  padding: 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
   cursor: pointer;
 }
-
+.button__one {
+  padding: 20px;
+  font-size: 16px;
+  margin: 4px 2px;
+}
 .menu__container {
-  -webkit-backdrop-filter: blur(30px);
-          backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
   background-color: rgba(0, 0, 0, 0.5);
   width: 100vw;
   height: 100vh;
   overflow: hidden;
   opacity: 0;
-  -webkit-transition: ease-out 0.2s;
   transition: ease-out 0.2s;
   position: relative;
   left: -500px;
@@ -168,11 +161,6 @@ table {
   margin-top: 225px;
 }
 
-body {
-  background-image: url(grass.jpg);
-  margin: 0;
-}
-
 ul {
   margin: 0;
 }
@@ -182,7 +170,6 @@ ul {
   margin-bottom: 5px;
   height: 4px;
   background-color: black;
-  -webkit-transition: all 0.8s;
   transition: all 0.8s;
   position: absolute;
   z-index: 10;
@@ -206,8 +193,7 @@ ul {
 }
 
 .active .line-1 {
-  -webkit-transform: rotateZ(-45deg) translate(-6px, 8px);
-          transform: rotateZ(-45deg) translate(-6px, 8px);
+  transform: rotateZ(-45deg) translate(-6px, 8px);
   background-color: white;
 }
 
@@ -217,13 +203,11 @@ ul {
 }
 
 .active .line-3 {
-  -webkit-transform: rotateZ(45deg) translate(-2px, -4px);
-          transform: rotateZ(45deg) translate(-2px, -4px);
+  transform: rotateZ(45deg) translate(-2px, -4px);
   background-color: white;
 }
 
 .active {
-  -webkit-transition: ease-in 0.3s;
   transition: ease-in 0.3s;
   left: 0;
 }
