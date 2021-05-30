@@ -1,3 +1,12 @@
+@use 'colors' as *;
+body{
+    background-color: $primary;
+}
+
+img{
+    max-width: 100%;
+}
+
 .menu {
     text-align: right;
     display: flex;
@@ -32,5 +41,4 @@
 .menu__item {
     display: block;
 }
-
 
