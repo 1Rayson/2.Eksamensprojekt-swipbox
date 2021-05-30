@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="guide.css">
+    <title>Document</title>
+</head>
+<body>
+        <!--Auto/manual image slider Start-->
+        <div class="slider">
+            <div class="slides">
+              <!--radio buttons start: Press these buttons to move to another picture-->
+              <input class="radio" type="radio" name="radio-btn" id="radio1" />
+              <input class="radio" type="radio" name="radio-btn" id="radio2" />
+              <input class="radio" type="radio" name="radio-btn" id="radio3" />
+              <input class="radio" type="radio" name="radio-btn" id="radio4" />
+              <!--Radio buttons end-->
+              <!--Slide images start-->
+              <div class="slide first">
+                <div class="slide-1-background">
+                  <div class="slide-1--grid">
+                    <h2 class="slide__title">
+                      Slide in <span class="slide__title--color">|</span> <br />
+                      Side menu <span class="slide__title--color">|</span>
+                    </h2>
+                    <p class="slide__paragraph">
+                      A side menu build using Html, CSS and Javascript. It consists of a title and different menu sections, that each
+                      has their own submenus.
+                    </p>
+                    <h3 class="slide__comment">"Check the menu out by pressing the menu icon in the top left corner"</h3>
+                  </div>
+                </div>
+                <img src="assets/Images/dark-green-leafs-nature-img.jpg" alt="A nature picture of dark leafs" />
+              </div>
+              <div class="slide">
+                <div class="slide-2-background">
+                  <div class="slide-2--grid">
+                    <h2 class="slide-2__title"><span class="slide-2__title--color">Automatic</span> image slider</h2>
+                    <p class="slide-2__paragraph">
+                      A background image slider build using Html, CSS and Javascript. It can be controller manually pressing the 4 radio
+                      buttons at the bottom of the screen, or you can whait the 7 seconds it takes to automatically go to the next
+                      picture.
+                    </p>
+                    <h2 class="slide-2__title--bottom"><span class="slide-2__title--color">Manual</span> image slider</h2>
+                  </div>
+                </div>
+                <img src="assets/Images/forrest-bridge-nature-img.jpg" alt="A picture of a bridge in a forrest" />
+              </div>
+              <div class="slide">
+                <div class="slide-3-background">
+                  <div class="slide-3--grid">
+                    <h2 class="slide-3__title">
+                      <span class="slide-3__title--color">Drop</span><br />The<span class="slide-3__title--color"> menu</span>
+                    </h2>
+                    <p class="slide-3__paragraph">
+                      The dropdown menu on this site is build using only Html and CSS. It consists of multiple menu points that each has
+                      their own list items that appear as soon as you hover or click the menu point. There is also a section called
+                      submenus, that other than having list items in it, also has another section og list items that appear when you
+                      hover over it.
+                    </p>
+                    <h3 class="slide-3__comment">- Check out the menu at the top of the screen</h3>
+                  </div>
+                </div>
+                <img src="assets/Images/green-leafs-nature-img.jpg" alt="A picture of green leafs" />
+              </div>
+              <div class="slide">
+                <div class="slide-4-background">
+                  <div class="slide-4--grid">
+                    <h2 class="slide-4__title">Embedded videos</h2>
+                    <span class="slide-4__title--border"></span>
+                    <p class="slide-4__paragraph">
+                      A series of videos embedded on the website using the link found on youtube. It is being displayed in a grid, with
+                      text describing the content of the videos.
+                    </p>
+                    <span class="slide-4__paragraph--border"></span>
+                    <h3 class="slide-4__comment">"Scroll further down to see the videos"</h3>
+                  </div>
+                </div>
+                <img src="assets/Images/forrest-road-nature-img.jpg" alt="A nature picture of a forrest road" />
+              </div>
+              <!--Slide images end-->
+              <!--Automatic navigation start-->
+              <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+              </div>
+              <!--Automatic navigation end-->
+              <!--Manual navigation start-->
+              <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+              </div>
+              <!--Manual navigation end-->
+            </div>
+          </div>
+          <script src="guide.js"></script>
+</body>
+</html>
