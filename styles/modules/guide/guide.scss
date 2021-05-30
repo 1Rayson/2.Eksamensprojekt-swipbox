@@ -1,13 +1,7 @@
-@use '/styles/general' as *;
 
-body{
-  background-color: $primary;
-}
-
-/* Auto/manual image slider */
-  
+ 
   .slides {
-    width: 100%;
+    width: 700%;
     height: 100%;
     display: flex;
     margin-top: 70.4px;
@@ -18,9 +12,15 @@ body{
   }
   
   .slide {
-    width: 20%;
+    width: 90%;
     position: relative;
     z-index: -1;
+    
+    &_img{
+      width: 100%;
+      height: 300px;
+      object-fit: contain;
+    }
   }
   
   /* CSS for manual slide navigation */
