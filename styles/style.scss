@@ -1,73 +1,69 @@
 @use 'modules' as *;
 
-html, body, section{
-    height:100%;
-    width:100%;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-    position: relative;
+html, body, section {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.splash{
+
+  &__logo{
+      padding: 8em;
+      height: auto;
+      width: auto;
+      position: relative;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+
+      
   }
   
-  section{
-    background-color:#0099CC;
-    color:#fff;
-    font-family: Helvetica;
+  &__one {
+      background-color: #0978A1;
   }
-  
-  h1{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    text-align: center;
-    width: 100%;
-    font-size:90px;
-    margin:0;
+    
+  &__two {
+      background-color: #2F9EC7;
   }
-  
-  a{
-    position: absolute;
-    color: #0099CC;
-    background-color:#fff;
-    text-decoration: none;
-    padding:5px 15px;
-    border-radius:10px;
-    font-size:20px;
-    bottom: 20px;
-    left:50%;
-    transform: translateX(-50%);
+  &__one{
+      position: absolute;
+      top: 0;
+      z-index: 1;
+      animation: slide 2s ease-in;
   }
-  
-  #dos{
-    background-color:#15b22f;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    top: 0%;
+    opacity: 1;
   }
-  
-  #dos a{
-    color:#15b22f;
+  90% {
+    top: 100%;
+    opacity: 1;
   }
-  
-  #uno.muestra, #dos.muestra{
-    position:absolute;
-    top:0;
-    z-index:1;
-    transform-origin:top center;
-    animation: iconosani 1.2s forwards;
+  100% {
+    top: 100%;
+    opacity: 1;
   }
-  
-  @keyframes iconosani {
-      0% {
-          transform: perspective(800px) rotateX(-90deg);
-          opacity: 1;
-      } 
-      40% {
-          transform: perspective(800px) rotateX(30deg);
-          opacity: 1;
-      }
-      70% {
-          transform: perspective(800px) rotateX(-10deg);
-      }
-      100% {
-          transform: perspective(800px) rotateX(0deg);
-          opacity: 1;
-      }
+}
+
+@keyframes slide {
+  0% {
+    top: 0%;
+    opacity: 1;
   }
+  90% {
+    top: 100%;
+    opacity: 1;
+  }
+  100% {
+    top: 100%;
+    opacity: 1;
+  }
+}
