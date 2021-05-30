@@ -1,5 +1,5 @@
-@use '../styles/general/colors' as *; /* this enables the usage of all variables and mixins from the general folder */
-@use '../styles/general/fonts' as *;
+@use '../styles/general' as *; /* this enables the usage of all variables and mixins from the general folder */
+
 
 html {
   scroll-behavior: smooth;
