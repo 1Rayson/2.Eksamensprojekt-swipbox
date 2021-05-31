@@ -13,9 +13,11 @@ h1, a, p{
 
 .location{
     height: 90%;
-    width: 90%;
+    width: 100%;
     justify-content: center;
     display: grid;
+    padding: 15px;
+    box-sizing: border-box;
     
         &--img{
             height:40vh;
@@ -23,6 +25,7 @@ h1, a, p{
             border-radius: 25px;
             align-self: center;
             justify-self: center;
+            object-fit: cover;
         }
         &--text{
             font-size: 1.5em;
