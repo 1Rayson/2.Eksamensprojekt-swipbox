@@ -8,6 +8,7 @@ h1, a, p{
 
 .title{
     font-size: 2em;
+    margin-top: 1em;
 }
 
 .location{
@@ -15,31 +16,32 @@ h1, a, p{
     width: 90%;
     justify-content: center;
     display: grid;
-    grid-template-areas:
-    'img img'
-    'text text'
-    'button button'
-    'back link';
+    
         &--img{
             height:40vh;
             width: 50vw;
             border-radius: 25px;
-            grid-area:'img';
+            align-self: center;
+            justify-self: center;
         }
         &--text{
             font-size: 1.5em;
             margin:1em;
-            grid-area:'text';
+            
         }
         &--button{
-            grid-area:'button';
+            position: relative;
+            align-self: center;
+            justify-self: center;
+                           
         }
         &--link{
-            grid-area:'link';
+            justify-self: end;
+            align-self:center;
         }
         &--back{
             height: auto;
-            grid-area:'back';
+            width: 2em;
         }
 
 }
