@@ -60,6 +60,13 @@ table {
   border-spacing: 0;
 }
 
+.title {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+}
+
 body {
   background-color: #2f9ec7;
 }
