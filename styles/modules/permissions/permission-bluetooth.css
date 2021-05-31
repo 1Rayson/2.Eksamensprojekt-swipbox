@@ -4,10 +4,31 @@ body {
   background-size: cover;
 }
 
+.popup-permission {
+  color: black;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Rubik", sans-serif;
+}
+.popup-permission--text {
+  size: 24px;
+  color: #797C81;
+}
+
 .container-permission {
+  position: relative;
   background-color: white;
-  border-radius: 24px 0 24px 0;
-  size: 10px;
+  border-radius: 30px;
+  line-height: 1.5;
+  top: 25%;
+  left: 11%;
+  width: 80%;
+}
+
+.top {
+  border-top: solid 2px #797C81;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
 }
 
 .container {
@@ -30,6 +51,4 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-top: 5px solid #797C81;
-  margin-top: 5px;
 }
