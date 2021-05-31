@@ -1,0 +1,35 @@
+body {
+  background-image: url("../../../assets/frosty_baggrund.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container-permission {
+  background-color: white;
+  border-radius: 24px 0 24px 0;
+  size: 10px;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.container-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-top: 5px solid #797C81;
+  margin-top: 5px;
+}
