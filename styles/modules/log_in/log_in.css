@@ -131,7 +131,18 @@ img {
   padding: 1em 2em;
   font-size: 24px;
 }
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .login {
   display: -ms-grid;
   display: grid;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
