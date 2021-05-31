@@ -1,0 +1,326 @@
+/* 
+Eric Meyer's CSS Reset
+http://meyerweb.com/eric/tools/css/reset/
+v1.0 | 20080212
+CSSresetr
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+  text-decoration: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.title {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  background-color: #2f9ec7;
+}
+
+img {
+  max-width: 100%;
+}
+
+.menu {
+  text-align: right;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.menu__link {
+  display: block;
+  padding: 0.5rem 2rem;
+  color: #0e0e0e;
+  text-decoration: none;
+}
+
+.menu__link:hover, .menu__link.--active {
+  color: #ad1f1f;
+  font-weight: bold;
+  top: 0;
+  left: 0;
+}
+
+.menu__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100vw;
+  padding: 1rem 2rem;
+  background-color: #ebebeb;
+  margin: 0 0 1rem 0;
+  min-width: 300px;
+  justify-items: center;
+}
+
+.menu__item {
+  display: block;
+}
+
+/* this enables the usage of all variables and mixins from the general folder */
+.button {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 16px;
+  color: #2F9EC7;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+.button--one {
+  padding: 1em 2em;
+  font-size: 24px;
+}
+.menu__container {
+  backdrop-filter: blur(30px);
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  opacity: 0;
+  transition: ease-out 0.2s;
+  position: relative;
+  left: -500px;
+  z-index: 9;
+}
+
+.navbar {
+  position: absolute;
+  width: 100vw;
+  left: 0;
+}
+.navbar__logo {
+  max-width: 171px;
+}
+.navbar__weather {
+  max-width: 40px;
+}
+
+.nav__list {
+  list-style: none;
+  position: relative;
+  top: 70px;
+  left: 10px;
+}
+
+.nav__item a {
+  text-decoration: none;
+  color: white;
+  font-family: "Exo 2";
+  font-weight: 300;
+  font-size: 3rem;
+}
+
+.nav__item {
+  padding-bottom: 30px;
+  max-width: 325px;
+  margin-right: 0;
+}
+
+.nav__item.log {
+  margin-top: 225px;
+}
+
+ul {
+  margin: 0;
+}
+
+.line {
+  width: 30px;
+  margin-bottom: 5px;
+  height: 4px;
+  background-color: white;
+  transition: all 0.8s;
+  position: absolute;
+  z-index: 10;
+  border-radius: 20px;
+  transition: all 0.8s;
+}
+
+.line-1 {
+  top: 20px;
+  left: 20px;
+}
+
+.line-2 {
+  top: 27px;
+  left: 20px;
+}
+
+.line-3 {
+  top: 34px;
+  left: 20px;
+}
+
+.active .line-1 {
+  transform: rotateZ(-45deg) translate(-6px, 8px);
+  background-color: white;
+}
+
+.active .line-2 {
+  opacity: 0;
+  background-color: white;
+}
+
+.active .line-3 {
+  transform: rotateZ(45deg) translate(-2px, -4px);
+  background-color: white;
+}
+
+.active {
+  transition: ease-in 0.3s;
+  left: 0;
+}
+
+.delay {
+  opacity: 1;
+}
+
+.w3-content w3-display-container {
+  max-width: 800px;
+}
+
+.mySlides {
+  display: none;
+  width: 100%;
+}
+
+.w3-left, .w3-right, .w3-badge {
+  cursor: pointer;
+}
+
+.w3-badge {
+  height: 13px;
+  width: 13px;
+  padding: 0;
+}
+
+.w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle {
+  width: 100%;
+}
+
+h1, a, p {
+  color: white;
+  font-family: "Rubik", sans-serif;
+  text-align: center;
+}
+
+.title {
+  font-size: 2em;
+  margin-top: 1em;
+}
+
+.location {
+  height: 90%;
+  width: 100%;
+  justify-content: center;
+  display: grid;
+  padding: 15px;
+  box-sizing: border-box;
+}
+.location--img {
+  height: 40vh;
+  width: 50vw;
+  border-radius: 25px;
+  align-self: center;
+  justify-self: center;
+  object-fit: cover;
+}
+.location--text {
+  font-size: 1.5em;
+  margin: 1em;
+}
+.location--button {
+  position: relative;
+  align-self: center;
+  justify-self: center;
+}
+.location--link {
+  justify-self: end;
+  align-self: center;
+}
+.location--back {
+  height: auto;
+  width: 2em;
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.login {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  border: none;
+}
+
+.input {
+  border-radius: 24px;
+  border: none;
+  padding: 1em;
+  box-shadow: 0 4px 2px #d6d5d5;
+  width: 80%;
+  font-size: 16px;
+  margin: 10px;
+}
+
+/* Remember to add new modules here:
+    @forward 'module_name';
+*/
