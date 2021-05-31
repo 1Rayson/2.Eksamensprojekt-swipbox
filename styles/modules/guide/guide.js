@@ -1,17 +1,26 @@
-// Automatic image slider  
-const radioBtn = document.querySelectorAll('.radio');
-let counter = 1;
-setInterval(function(){
-    radioBtn[counter - 1].checked = true;
-    counter++;
-    if(counter > document.querySelectorAll('.slide').length) {
-        counter = 1;
-    }
-},11000);
+var slideIndex = 1;
+showDivs(slideIndex);
 
-for(let j = 0; j < radioBtn.length; j++) {
-    radioBtn[j].addEventListener('click', function(e){
-        e.preventDefault;
-        counter = j + 1;
-    });
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
 }

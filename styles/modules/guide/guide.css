@@ -1,200 +1,22 @@
-/* 
-Eric Meyer's CSS Reset
-http://meyerweb.com/eric/tools/css/reset/
-v1.0 | 20080212
-CSSresetr
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, font, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent;
+.w3-content w3-display-container {
+  max-width: 800px;
 }
 
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: "";
-  content: none;
-}
-
-/* remember to define focus styles! */
-:focus {
-  outline: 0;
-}
-
-/* remember to highlight inserts somehow! */
-ins {
-  text-decoration: none;
-}
-
-del {
-  text-decoration: line-through;
-}
-
-/* tables still need 'cellspacing="0"' in the markup */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-.menu {
-  text-align: right;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-.menu__link {
-  display: block;
-  padding: 0.5rem 2rem;
-  color: #0e0e0e;
-  text-decoration: none;
-}
-
-.menu__link:hover, .menu__link.--active {
-  color: #ad1f1f;
-  font-weight: bold;
-  top: 0;
-  left: 0;
-}
-
-.menu__list {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  width: 100vw;
-  padding: 1rem 2rem;
-  background-color: #ebebeb;
-  margin: 0 0 1rem 0;
-  min-width: 300px;
-  justify-items: center;
-}
-
-.menu__item {
-  display: block;
-}
-
-/* this enables the usage of all variables and mixins from the general folder */
-.button {
-  background-color: #ffffff;
-  border: none;
-  border-radius: 25%;
-  color: #2F9EC7;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
-}
-.button__one {
-  padding: 20px;
-  font-size: 16px;
-  margin: 4px 2px;
-}
-body {
-  background-color: #2f9ec7;
-}
-
-/* Auto/manual image slider */
-.slides {
-  width: 500%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 70.4px;
-}
-
-.slides input {
+.mySlides {
   display: none;
-}
-
-.slide {
-  width: 20%;
-  position: relative;
-  z-index: -1;
-}
-
-/* CSS for manual slide navigation */
-.navigation-manual {
-  position: absolute;
   width: 100%;
-  margin-top: 81vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
-.manual-btn {
-  border: 2px solid #ffffff;
-  padding: 7px;
-  border-radius: 50%;
+.w3-left, .w3-right, .w3-badge {
   cursor: pointer;
 }
 
-.manual-btn:not(:last-child) {
-  margin-right: 20px;
+.w3-badge {
+  height: 13px;
+  width: 13px;
+  padding: 0;
 }
 
-.manual-btn:hover {
-  background: #ffffff;
+.w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle {
+  width: 100%;
 }
-
-#radio1:checked ~ .first {
-  margin-left: 0;
-}
-
-#radio2:checked ~ .first {
-  margin-left: -20%;
-}
-
-#radio3:checked ~ .first {
-  margin-left: -40%;
-}
-
-#radio4:checked ~ .first {
-  margin-left: -60%;
-}
-
-#radio5:checked ~ .first {
-  margin-left: -80%;
-}
-
-#radio6:checked ~ .first {
-  margin-left: -100%;
-}
-
-#radio7:checked ~ .first {
-  margin-left: -120%;
-}
-
-/* Picture text and info styling */
