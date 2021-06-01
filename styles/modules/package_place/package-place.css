@@ -1,0 +1,11 @@
+.pakkeboks {
+  width: 40%;
+}
+.pakkeboks-title {
+  position: relative;
+  top: 15rem;
+}
+.pakkeboks-sign {
+  position: relative;
+  height: auto;
+}
