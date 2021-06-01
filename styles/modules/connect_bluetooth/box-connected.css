@@ -77,12 +77,8 @@ img {
 
 .menu {
   text-align: right;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .menu__link {
@@ -100,9 +96,7 @@ img {
 }
 
 .menu__list {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   width: 100vw;
   padding: 1rem 2rem;
@@ -131,13 +125,20 @@ img {
   padding: 1em 2em;
   font-size: 24px;
 }
-.bluetooth-title {
+.connected-title {
   position: relative;
   top: 15rem;
 }
-.bluetooth-sign {
+.connected-sign {
   position: absolute;
-  top: 25rem;
-  left: 50%;
-  margin-left: -48px;
+  justify-self: center;
+  top: 20rem;
+  left: 20%;
+  margin-left: -35px;
+  width: 80%;
+}
+.connected--button {
+  position: static;
+  align-self: center;
+  bottom: 0;
 }

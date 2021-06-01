@@ -2,11 +2,6 @@
 <html lang="en">
 
 <head>
-    <script>
-        setTimeout(function () {
-            location = '/styles/modules/permissions/permission-bluetooth.html';
-        }, 2000) // Change this value to number of milliseconds to wait. 1000 = 1s
-    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../style.css">
-    <link rel="stylesheet" href="connect-bluetooth.css">
+    <link rel="stylesheet" href="box-connected.css">
 </head>
 
 <body>
@@ -47,13 +42,15 @@
             </ul>
         </section>
     </nav>
-    <section class="bluetooth">
-        
-        <h1 class="title bluetooth-title">FORBIND TIL BLUETOOTH</h1>
+    <section class="connected">
 
-        <img class="bluetooth-sign" src="../../../assets/bluetooth-sign.png" alt="bluetooth sign">
+        <h1 class="title connected-title">FORBUNDET TIL BLUETOOTH</h1>
+
+        <img class="connected-sign" src="../../../assets/forbinder_til_pakkeboks.GIF" alt="connection check sign">
+        <a class="button button--one location--button" href="/styles/modules/connect_bluetooth/connect_bluetooth.html">Åben lågen</a>
+
     </section>
-    
+
 
 
     <script src="/styles/modules/menu/menu.js"></script>

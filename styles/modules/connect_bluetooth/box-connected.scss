@@ -1,0 +1,23 @@
+@use '../../general' as *;
+
+.connected {
+    &-title {
+        position: relative;
+        top: 15rem;
+    }
+
+    &-sign{
+    position: absolute;
+    justify-self: center;
+    top: 20rem;
+    left: 20%;
+    margin-left: -35px;
+    width: 80%;
+}
+&--button{
+    position:static;
+    align-self: center;
+    bottom:0;
+
+} 
+}
