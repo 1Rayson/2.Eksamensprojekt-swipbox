@@ -32,6 +32,19 @@
 }
 
 .back {
+  position: relative;
+}
+
+.backiconguide {
   height: auto;
   width: 2em;
+  margin-top: 48.4em;
+}
+
+.button button--one {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80%;
+  width: 50%;
 }
