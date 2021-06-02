@@ -1,7 +1,6 @@
 
 
 .pakkeboks{
-    width: 40%;
     &-title {
         position: relative;
         top: 15rem;
@@ -11,7 +10,17 @@
     position: relative;
     
   height: auto;
+}   
 }
 
-    
+.title pakkeboks-title {
+  
+}
+
+.pakkeboks-sign {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80%;
+  width: 50%;
 }
