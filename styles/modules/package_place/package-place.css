@@ -1,13 +1,15 @@
-.pakkeboks-title {
+.pakkeboks {
+  height: auto;
+}
+.pakkeboks--title {
   position: relative;
   top: 15rem;
 }
-.pakkeboks-sign {
+.pakkeboks--sign {
   position: relative;
-  height: auto;
 }
 
-.pakkeboks-sign {
+.pakkeboks--sign {
   display: block;
   margin-left: auto;
   margin-right: auto;

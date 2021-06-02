@@ -1,19 +1,19 @@
 
-
 .pakkeboks{
-    &-title {
-        position: relative;
-        top: 15rem;
+  height: auto;
+
+    &--title {
+      position: relative;
+      top: 15rem;
     }
 
-    &-sign{
-    position: relative;
+    &--sign{
+      position: relative;
     
-  height: auto;
 }   
 }
 
-.pakkeboks-sign {
+.pakkeboks--sign {
   display: block;
   margin-left: auto;
   margin-right: auto;
