@@ -3,21 +3,14 @@
 .connected {
     &-title {
         position: relative;
-        top: 15rem;
+        top: 8rem;
     }
 
     &-sign{
-    position: absolute;
-    justify-self: center;
-    top: 20rem;
-    left: 20%;
-    margin-left: -35px;
-    width: 80%;
+        position: relative;
+        top: 15rem;
+        left: 11%;
+        width: 80%;
 }
-&--button{
-    position:static;
-    align-self: center;
-    bottom:0;
+}
 
-} 
-}
