@@ -26,3 +26,16 @@
       font-size: 24px;  
     } 
   }
+
+.activate{
+  background-color: #ffffff;
+  border: none;
+  border-radius: 40%;
+  width: 2rem;
+  height: 2.5rem;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
