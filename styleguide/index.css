@@ -140,6 +140,27 @@ img {
   padding: 1em 2em;
   font-size: 24px;
 }
+.button--three {
+  margin-top: 4rem;
+}
+
+.activate {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 40%;
+  width: 2rem;
+  height: 2.5rem;
+  text-align: center;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  cursor: pointer;
+}
 
 /* this enables the usage of all variables and mixins from the general folder */
 html {

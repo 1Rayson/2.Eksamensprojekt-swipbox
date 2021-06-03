@@ -3,7 +3,7 @@
 }
 .pakkeboks--title {
   position: relative;
-  top: 15rem;
+  top: 5rem;
 }
 .pakkeboks--sign {
   position: relative;
@@ -13,6 +13,6 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 80%;
+  margin-top: 13rem;
   width: 50%;
 }
