@@ -32,14 +32,23 @@
   }
 
 .activate{
-  background-color: #ffffff;
-  border: none;
-  border-radius: 40%;
-  width: 2rem;
-  height: 2.5rem;
-  text-align: center;
-  text-decoration: none;
+  margin-left:auto;
+  margin-right: auto;
+  margin-top: 20%;
   display: flex;
-  flex-direction: row;
+  justify-content:space-evenly;
   cursor: pointer;
+  width: 60%;
+  
+  
+  &--field{
+    background-color: #ffffff;
+    border: none;
+    border-radius: 40%;
+    width: 2rem;
+    height: 2.5rem;
+    text-align: center;
+    text-decoration: none;
+    flex-direction: row;
+  }
 }
