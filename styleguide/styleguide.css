@@ -140,6 +140,9 @@ img {
   padding: 1em 2em;
   font-size: 24px;
 }
+.button--three {
+  margin-top: 4rem;
+}
 
 .activate {
   background-color: #ffffff;
