@@ -38,13 +38,14 @@
 .backiconguide {
   height: auto;
   width: 2em;
-  margin-top: 48.4em;
+  margin-top: 48.5em;
 }
 
-.button button--one {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 80%;
-  width: 50%;
+.w3-center .w3-section {
+  margin-bottom: 2em !important;
+}
+
+.guide-button {
+  display: flex;
+  justify-content: center;
 }
