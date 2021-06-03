@@ -77,12 +77,8 @@ img {
 
 .menu {
   text-align: right;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .menu__link {
@@ -100,9 +96,7 @@ img {
 }
 
 .menu__list {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   width: 100vw;
   padding: 1rem 2rem;
@@ -167,8 +161,11 @@ img {
   text-decoration: none;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
 }
 
 /* this enables the usage of all variables and mixins from the general folder */
@@ -191,12 +188,8 @@ p {
 
 .menu {
   text-align: right;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .menu__link {
@@ -214,9 +207,7 @@ p {
 }
 
 .menu__list {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   width: 100vw;
   padding: 1rem 2rem;

@@ -256,3 +256,21 @@ p {
   font-size: 24px;
   font-family: "Rubik", sans-serif;
 }
+
+.button {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 16px;
+  color: #2F9EC7;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+.button--styleguide {
+  display: inline-block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 24px;
+}
