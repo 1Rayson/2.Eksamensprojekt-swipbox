@@ -77,12 +77,8 @@ img {
 
 .menu {
   text-align: right;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .menu__link {
@@ -100,9 +96,7 @@ img {
 }
 
 .menu__list {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   width: 100vw;
   padding: 1rem 2rem;
@@ -140,6 +134,9 @@ img {
   padding: 1em 2em;
   font-size: 24px;
 }
+.button--three {
+  margin-top: 4rem;
+}
 
 .activate {
   background-color: #ffffff;
@@ -149,13 +146,8 @@ img {
   height: 2.5rem;
   text-align: center;
   text-decoration: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   cursor: pointer;
 }
 
@@ -179,12 +171,8 @@ p {
 
 .menu {
   text-align: right;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .menu__link {
@@ -202,9 +190,7 @@ p {
 }
 
 .menu__list {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   width: 100vw;
   padding: 1rem 2rem;
