@@ -45,7 +45,6 @@
   margin-bottom: 2em !important;
 }
 
-.guide-button {
-  display: flex;
-  justify-content: center;
+.guidebtnwrapper {
+  top: 5rem;
 }
