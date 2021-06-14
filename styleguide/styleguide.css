@@ -1,171 +1,8 @@
-/* 
-Eric Meyer's CSS Reset
-http://meyerweb.com/eric/tools/css/reset/
-v1.0 | 20080212
-CSSresetr
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, font, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent;
-}
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: "";
-  content: none;
-}
-
-/* remember to define focus styles! */
-:focus {
-  outline: 0;
-}
-
-/* remember to highlight inserts somehow! */
-ins {
-  text-decoration: none;
-}
-
-del {
-  text-decoration: line-through;
-}
-
-/* tables still need 'cellspacing="0"' in the markup */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
 .title {
   color: white;
   font-size: 30px;
   text-align: center;
   font-family: "Rubik", sans-serif;
-}
-
-body {
-  background-color: #2f9ec7;
-}
-
-img {
-  max-width: 100%;
-}
-
-.menu {
-  text-align: right;
-  display: flex;
-  justify-content: flex-start;
-}
-
-.menu__link {
-  display: block;
-  padding: 0.5rem 2rem;
-  color: #0e0e0e;
-  text-decoration: none;
-}
-
-.menu__link:hover, .menu__link.--active {
-  color: #ad1f1f;
-  font-weight: bold;
-  top: 0;
-  left: 0;
-}
-
-.menu__list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  width: 100vw;
-  padding: 1rem 2rem;
-  background-color: #ebebeb;
-  margin: 0 0 1rem 0;
-  min-width: 300px;
-  justify-items: center;
-}
-
-.menu__item {
-  display: block;
-}
-
-/* this enables the usage of all variables and mixins from the general folder */
-.button {
-  background-color: #ffffff;
-  border: none;
-  border-radius: 16px;
-  color: #2F9EC7;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
-}
-.button--one {
-  padding: 1em 2em;
-  font-size: 24px;
-}
-.button--two {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 70%;
-  width: 50%;
-  padding: 1em 2em;
-  font-size: 24px;
-}
-.button--three {
-  margin-top: 4rem;
-}
-
-.activate {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  cursor: pointer;
-  width: 60%;
-}
-.activate--field {
-  background-color: #ffffff;
-  border: none;
-  border-radius: 40%;
-  width: 2rem;
-  height: 2.5rem;
-  text-align: center;
-  text-decoration: none;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  display: flex;
-  flex-direction: row;
-  cursor: pointer;
 }
 
 /* this enables the usage of all variables and mixins from the general folder */
@@ -174,85 +11,337 @@ html {
 }
 
 body {
-  background-color: #A8BAAC;
-  font-size: 24px;
+  width: 70%;
+  margin: auto;
+  padding: 0;
+  background-color: #ebebeb;
+  font-family: "Rubik", serif;
 }
 
-p {
-  text-align: center;
-}
-
-.titlestyle {
-  text-align: center;
+header {
+  margin-bottom: 6.5rem;
 }
 
 .menu {
-  text-align: right;
+  width: 70%;
   display: flex;
-  justify-content: flex-start;
+  position: fixed;
+  top: 0;
 }
 
 .menu__link {
+  font-size: 1.1rem;
   display: block;
   padding: 0.5rem 2rem;
-  color: #0e0e0e;
+  color: #3a3b3c;
   text-decoration: none;
 }
 
-.menu__link:hover, .menu__link.--active {
-  color: #ad1f1f;
+.menu__link:hover,
+.menu__link.--active {
+  color: white;
   font-weight: bold;
   top: 0;
   left: 0;
 }
 
 .menu__list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-around;
   width: 100vw;
   padding: 1rem 2rem;
-  background-color: #ffff;
+  background-color: #3a3b3c;
   margin: 0 0 1rem 0;
   min-width: 300px;
-  justify-items: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .menu__item {
   display: block;
 }
 
+.menu__item a {
+  color: #ffffff;
+  font-weight: 600;
+}
+
 .color {
-  height: 100px;
+  padding: 44px 0px 20px 32px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+.color__heading {
+  font-size: 2rem;
+  color: white;
+  margin: 0;
+  line-height: 1.2;
+}
+.color__description {
+  font-size: 1rem;
+  margin: 0 0 32px 0;
+  width: 80%;
+}
+.color__title {
+  font-size: 1rem;
+  color: #3a3b3c;
+  margin-bottom: 0.2rem;
+}
+.color__wrapper {
+  display: flex;
+}
+.color__hex {
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  padding: 10px;
+  height: 100px;
+  color: #ffffff;
+  border: solid 1px;
+  border-radius: 10px;
+  margin: 10px 0px;
+}
+.color__information {
+  display: flex;
+  flex-direction: column;
+  margin-right: 15px;
+  padding-bottom: 1.5rem;
+  width: 200px;
+  height: inherit;
+}
+.color__scss-name {
+  width: 100%;
+  font-size: 1rem;
+  text-align: center;
+  border: solid 1px darkgray;
+  border-radius: 10px;
+  color: #000000;
 }
 
-.--background {
-  background-color: #2F9EC7;
+.typography {
+  margin-top: 30px;
+  padding: 44px 32px 44px 32px;
+  background-color: #ffffff;
+  border-radius: 10px;
 }
-
-.--secondary {
-  background-color: #0978A1;
+.typography__heading {
+  font-size: 2rem;
+  color: white;
+  margin: 0;
+  line-height: 1.2;
 }
-
-.--buttons {
-  background-color: #FFFFFF;
+.typography__description {
+  font-size: 1rem;
+  margin: 0 0 32px 0;
+  width: 80%;
 }
-
-.--popup {
-  background-color: #797C81;
+.typography__fonts {
+  margin: 0;
+  color: #3a3b3c;
+  font-size: 1rem;
 }
-
-.fonts {
+.typography__title {
+  font-size: 1rem;
+  margin: 0;
+  color: #3a3b3c;
+}
+.typography__display {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 1px #ebebeb;
+}
+.typography__text--common-styles {
+  margin: 5px 0px;
+  color: white;
+}
+.typography__h1 {
+  font-size: 2rem;
+}
+.typography__h2 {
+  font-size: 1.25rem;
+}
+.typography__h3 {
+  font-size: 1.125rem;
+}
+.typography__h4 {
+  font-size: 1rem;
+}
+.typography__h5 {
+  font-size: 0.75rem;
+}
+.typography__size-info {
+  width: 26px;
+  height: 26px;
+  font-size: 0.8rem;
+  color: #3a3b3c;
+  border: solid 1px #3a3b3c;
+  border-radius: 5px;
   text-align: center;
 }
 
-.--title {
-  font-size: 36px;
-  font-family: "Rubik", sans-serif;
+.typography__gradient-background {
+  background: white;
+}
+.typography__heading--color {
+  color: #ffffff;
+}
+.typography__description--color {
+  color: #ffffff;
+}
+.typography__fonts--color {
+  color: lightgrey;
+}
+.typography__title--color {
+  color: lightgrey;
+}
+.typography__text--color {
+  color: #ffffff;
+}
+.typography__size-info--color {
+  color: #ffffff;
+  border: solid 1px #ffffff;
 }
 
-.--body {
-  font-size: 24px;
-  font-family: "Rubik", sans-serif;
+.icons {
+  margin-top: 30px;
+  padding: 44px 32px 44px 32px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+.icons__heading {
+  font-size: 2rem;
+  color: white;
+  margin: 0;
+  line-height: 1.2;
+}
+.icons__description {
+  font-size: 1rem;
+  margin: 0 0 32px 0;
+  width: 80%;
+}
+.icons__information {
+  width: 200px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding-right: 20px;
+  align-items: center;
+}
+.icons__wrapper {
+  display: flex;
+}
+.icons__icon-svg {
+  width: 60px;
+}
+.icons__file-path {
+  width: 100%;
+  font-size: 1rem;
+  text-align: center;
+  border: solid 1px darkgray;
+  border-radius: 10px;
+  color: #000000;
+  margin-top: 10px;
+}
+.icons__report-svg {
+  width: 60px;
+}
+
+.buttons {
+  margin-top: 30px;
+  padding: 44px 32px 44px 32px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin-bottom: 100px;
+}
+.buttons__heading {
+  font-size: 2rem;
+  color: white;
+  margin: 0;
+  line-height: 1.2;
+}
+.buttons__description {
+  font-size: 1rem;
+  margin: 0 0 32px 0;
+  width: 80%;
+}
+.buttons__wrapper {
+  display: flex;
+}
+.buttons__location--flex {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 100px;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 50px;
+}
+.buttons__location {
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+  border-bottom: solid 1px grey;
+  margin-bottom: 10px;
+}
+.buttons__location--adress {
+  font-size: 20px;
+  color: white;
+  font-weight: 100;
+  padding-right: 2.5rem;
+  margin-bottom: 0.3rem;
+}
+.buttons__location--distance-and-payment {
+  display: flex;
+}
+.buttons__location--coin-icon {
+  padding-right: 10px;
+  width: 1.5rem;
+}
+.buttons__location--distance {
+  font-size: 20px;
+  font-weight: 100;
+  color: white;
+  margin-bottom: 0.3rem;
+}
+.buttons__location--link {
+  text-decoration: none;
+  color: white;
+}
+.buttons__location-use {
+  width: 100%;
+  font-size: 1rem;
+  text-align: center;
+  border: solid 1px darkgray;
+  border-radius: 10px;
+  color: #000000;
+  margin-top: 10px;
+}
+.buttons__send {
+  width: 300px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.buttons__send--style {
+  font-family: white;
+  font-size: 1rem;
+  color: #ffffff;
+  padding: 5px 20px;
+  border: solid 0px;
+  border-radius: 15px;
+  box-shadow: 0px 3px 6px black;
+  margin-top: 20px;
+}
+.buttons__send-use {
+  width: 100%;
+  font-size: 1rem;
+  text-align: center;
+  border: solid 1px darkgray;
+  border-radius: 10px;
+  color: #000000;
+  margin-top: 10px;
 }
